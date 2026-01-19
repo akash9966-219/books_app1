@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📚 Book Explorer</h1>
+    <p>Discover books with summaries & recommendations</p>
+</header>
+
+<nav>
+    <button data-genre="fiction">Fiction</button>
+    <button data-genre="fantasy">Fantasy</button>
+    <button data-genre="romance">Romance</button>
+    <button data-genre="science">Science</button>
+    <button data-genre="history">History</button>
+</nav>
+
+<section class="book-grid" id="books"></section>
+
+<div class="pagination">
+    <button id="prevBtn">⬅ Prev</button>
+    <span id="pageNum">1</span>
+    <button id="nextBtn">Next ➡</button>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <img id="modal-img">
+        <h2 id="modal-title"></h2>
+        <p id="modal-author"></p>
+
+        <h4>Summary</h4>
+        <p id="modal-summary"></p>
+
+        <p>
+            <strong>Recommendation:</strong>
+            <span id="modal-recommend"></span>
+        </p>
+
+        <a id="full-book-link" target="_blank" rel="noopener noreferrer">
+            📖 Read / Preview on Google Books
+        </a>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
